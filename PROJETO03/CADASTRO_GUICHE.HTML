@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATENDEFACIL - CADASTRO DE GUICHÊ</title>
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" >
+
+    <style>
+        
+    </style>
+  </head>
+  <body>
+       
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="HOME.HTML">ATENDEFACIL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="HOME.HTML">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="CADASTRO_OPERADOR.HTML">Cadastro de Atendente</a></li>
+                <li><a class="dropdown-item" href="#">Cadastro de Senhas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="CADASTRO_GUICHE.HTML">Cadastro de Guichês</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Relatórios
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="RELATORIO_ATENDIMENTOS.HTML">Relatórios de Atendente</a></li>
+                <li><a class="dropdown-item" href="FILA_ATENDIMENTOS.HTML">Relatórios de Senhas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Relatórios de Guichês</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Configurações
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Configurações de Atendente</a></li>
+                <li><a class="dropdown-item" href="#">Configurações de Senhas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Configurações de Guichês</a></li>
+              </ul>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sair</a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+
+          
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Cadastro de Guichê</h1>
+      
+      <form class="row">
+        <div class="col">
+        <div class="mb-3 col-2">
+          <label for="exampleInputEmail1" class="form-label">Código:</label>
+          <input disabled type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">          
+        </div>
+        <div class="mb-3">          
+          <div class="col-2"><label for="exampleInputPassword1" class="form-label">Nome/Balcão:</label></div>
+          <div class="col-4"><input type="text" class="form-control" id="exampleInputPassword1"></div>       
+               
+          </div>
+        <div class="mb-3 col-3">
+          <label for="exampleInputEmail1" class="form-label">Número:</label>
+          <input  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">          
+        </div>
+      </div>
+        <div class="col">
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Tipos de Atendimento</th>            
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></th>
+              <td>Geral</td>             
+            </tr>
+            <tr>
+              <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></th>
+              <td>Prioritário</td>             
+            </tr>
+            <tr>
+              <th scope="row"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked></th>
+              <td>Normal</td>              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <button type="submit" class="btn btn-primary">Salvar</button>
+      </form>   
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Número</th>
+            <th scope="col">Opções</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>BALCÃO 02</td>
+            <td>02</td>
+            <td><div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Editar</button>
+              <button type="button" class="btn btn-primary">Excluir</button>
+              <button type="button" class="btn btn-primary">Ver</button>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>BALCÃO 03</td>
+            <td>03</td>
+            <td><div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Editar</button>
+              <button type="button" class="btn btn-primary">Excluir</button>
+              <button type="button" class="btn btn-primary">Ver</button>
+            </div></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>BALCÃO 05</td>
+            <td>05</td>
+            <td><div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary">Editar</button>
+              <button type="button" class="btn btn-primary">Excluir</button>
+              <button type="button" class="btn btn-primary">Ver</button>
+            </div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      </div>  
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
